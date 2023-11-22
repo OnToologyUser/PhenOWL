@@ -72,68 +72,68 @@
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8dc -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8dc">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8dc">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8ec -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8ec">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8ec">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8eq -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8eq">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8eq">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8ntpp -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8ntpp">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8ntpp">
         <owl:inverseOf rdf:resource="http://www.opengis.net/ont/geosparql#rcc8ntppi"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8ntppi -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8ntppi">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8ntppi">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8po -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8po">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8po">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8tpp -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8tpp">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8tpp">
         <owl:inverseOf rdf:resource="http://www.opengis.net/ont/geosparql#rcc8tppi"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.opengis.net/ont/geosparql#rcc8tppi -->
 
-    <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#rcc8tppi">
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#rcc8tppi">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -264,9 +264,9 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <!-- http://www.w3.org/2006/time#intervalEquals -->
 
-    <rdf:Description rdf:about="http://www.w3.org/2006/time#intervalEquals">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#intervalEquals">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-    </rdf:Description>
+    </owl:ObjectProperty>
     
 
 
@@ -377,10 +377,10 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#O1">
         <rdf:type rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#Observation"/>
-        <gufo:hasEndPoint rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t2"/>
         <phen:happensIn rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#s1"/>
         <phen:hasTimeInterval rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#ti1"/>
         <phen:observationOf rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#PO1"/>
+        <gufo:hasEndPoint rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t2"/>
     </owl:NamedIndividual>
     
 
@@ -389,9 +389,9 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#O2">
         <rdf:type rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#Observation"/>
-        <gufo:hasBeginPoint rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t3"/>
         <phen:happensIn rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#s3"/>
         <phen:observationOf rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#PO2"/>
+        <gufo:hasBeginPoint rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t3"/>
     </owl:NamedIndividual>
     
 
@@ -453,9 +453,9 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#pr1">
         <rdf:type rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#Presence"/>
-        <gufo:hasBeginPoint rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t3"/>
         <phen:hasTimeInterval rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#ti2"/>
         <phen:spatialPresenceIn rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#f1"/>
+        <gufo:hasBeginPoint rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t3"/>
     </owl:NamedIndividual>
     
 
@@ -524,8 +524,8 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#ti1">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
-        <time:hasBeginning rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t1"/>
         <time:intervalContains rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#ti2"/>
+        <time:hasBeginning rdf:resource="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#t1"/>
     </owl:NamedIndividual>
     
 
