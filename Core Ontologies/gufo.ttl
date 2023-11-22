@@ -1629,27 +1629,6 @@ time:Instant a owl:Class ;
 # 
 # #################################################################
 # #
-# #    Individuals
-# #
-# #################################################################
-# 
-# 
-# http://purl.org/nemo/gufo#DataScientist
-
-gufo:DataScientist a owl:NamedIndividual , gufo:SubKind .
-# 
-# http://purl.org/nemo/gufo#Matheus
-
-gufo:Matheus a owl:NamedIndividual , gufo:Object .
-# 
-# http://purl.org/nemo/gufo#Person
-
-gufo:Person a owl:NamedIndividual , gufo:Kind .
-# 
-# 
-# 
-# #################################################################
-# #
 # #    General axioms
 # #
 # #################################################################

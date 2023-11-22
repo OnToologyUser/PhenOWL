@@ -782,24 +782,18 @@ The range of this property is not specified, so can be replaced by any specific 
 	rdfs:subClassOf :GeneralDateTimeDescription , _:genid7 .
 
 _:genid7 a owl:Restriction ;
-	owl:onProperty :hasTRS ;
-	owl:hasValue <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> .
+	owl:onProperty :day ;
+	owl:allValuesFrom xsd:gDay .
 
 :DateTimeDescription rdfs:subClassOf _:genid8 .
 
 _:genid8 a owl:Restriction ;
-	owl:onProperty :day ;
-	owl:allValuesFrom xsd:gDay .
+	owl:onProperty :month ;
+	owl:allValuesFrom xsd:gMonth .
 
 :DateTimeDescription rdfs:subClassOf _:genid9 .
 
 _:genid9 a owl:Restriction ;
-	owl:onProperty :month ;
-	owl:allValuesFrom xsd:gMonth .
-
-:DateTimeDescription rdfs:subClassOf _:genid10 .
-
-_:genid10 a owl:Restriction ;
 	owl:onProperty :year ;
 	owl:allValuesFrom xsd:gYear .
 
@@ -841,15 +835,15 @@ In the original OWL-Time the following constraint appeared:
 # http://www.w3.org/2006/time#Duration
 
 :Duration a owl:Class ;
-	rdfs:subClassOf :TemporalDuration , _:genid11 .
+	rdfs:subClassOf :TemporalDuration , _:genid10 .
 
-_:genid11 a owl:Restriction ;
+_:genid10 a owl:Restriction ;
 	owl:onProperty :unitType ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
 
-:Duration rdfs:subClassOf _:genid12 .
+:Duration rdfs:subClassOf _:genid11 .
 
-_:genid12 a owl:Restriction ;
+_:genid11 a owl:Restriction ;
 	owl:onProperty :numericDuration ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
 
@@ -861,51 +855,45 @@ _:genid12 a owl:Restriction ;
 # http://www.w3.org/2006/time#DurationDescription
 
 :DurationDescription a owl:Class ;
-	rdfs:subClassOf :GeneralDurationDescription , _:genid13 .
+	rdfs:subClassOf :GeneralDurationDescription , _:genid12 .
+
+_:genid12 a owl:Restriction ;
+	owl:onProperty :days ;
+	owl:allValuesFrom xsd:decimal .
+
+:DurationDescription rdfs:subClassOf _:genid13 .
 
 _:genid13 a owl:Restriction ;
-	owl:onProperty :hasTRS ;
-	owl:hasValue <http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> .
+	owl:onProperty :hours ;
+	owl:allValuesFrom xsd:decimal .
 
 :DurationDescription rdfs:subClassOf _:genid14 .
 
 _:genid14 a owl:Restriction ;
-	owl:onProperty :days ;
+	owl:onProperty :minutes ;
 	owl:allValuesFrom xsd:decimal .
 
 :DurationDescription rdfs:subClassOf _:genid15 .
 
 _:genid15 a owl:Restriction ;
-	owl:onProperty :hours ;
+	owl:onProperty :months ;
 	owl:allValuesFrom xsd:decimal .
 
 :DurationDescription rdfs:subClassOf _:genid16 .
 
 _:genid16 a owl:Restriction ;
-	owl:onProperty :minutes ;
+	owl:onProperty :seconds ;
 	owl:allValuesFrom xsd:decimal .
 
 :DurationDescription rdfs:subClassOf _:genid17 .
 
 _:genid17 a owl:Restriction ;
-	owl:onProperty :months ;
+	owl:onProperty :weeks ;
 	owl:allValuesFrom xsd:decimal .
 
 :DurationDescription rdfs:subClassOf _:genid18 .
 
 _:genid18 a owl:Restriction ;
-	owl:onProperty :seconds ;
-	owl:allValuesFrom xsd:decimal .
-
-:DurationDescription rdfs:subClassOf _:genid19 .
-
-_:genid19 a owl:Restriction ;
-	owl:onProperty :weeks ;
-	owl:allValuesFrom xsd:decimal .
-
-:DurationDescription rdfs:subClassOf _:genid20 .
-
-_:genid20 a owl:Restriction ;
 	owl:onProperty :years ;
 	owl:allValuesFrom xsd:decimal .
 
@@ -917,75 +905,75 @@ _:genid20 a owl:Restriction ;
 # http://www.w3.org/2006/time#GeneralDateTimeDescription
 
 :GeneralDateTimeDescription a owl:Class ;
-	rdfs:subClassOf :TemporalPosition , _:genid21 .
+	rdfs:subClassOf :TemporalPosition , _:genid19 .
 
-_:genid21 a owl:Restriction ;
+_:genid19 a owl:Restriction ;
 	owl:onProperty :unitType ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:GeneralDateTimeDescription rdfs:subClassOf _:genid20 .
+
+_:genid20 a owl:Restriction ;
+	owl:onProperty :dayOfWeek ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:GeneralDateTimeDescription rdfs:subClassOf _:genid21 .
+
+_:genid21 a owl:Restriction ;
+	owl:onProperty :monthOfYear ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid22 .
 
 _:genid22 a owl:Restriction ;
-	owl:onProperty :dayOfWeek ;
+	owl:onProperty :timeZone ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid23 .
 
 _:genid23 a owl:Restriction ;
-	owl:onProperty :monthOfYear ;
+	owl:onProperty :day ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid24 .
 
 _:genid24 a owl:Restriction ;
-	owl:onProperty :timeZone ;
+	owl:onProperty :dayOfYear ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid25 .
 
 _:genid25 a owl:Restriction ;
-	owl:onProperty :day ;
+	owl:onProperty :hour ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid26 .
 
 _:genid26 a owl:Restriction ;
-	owl:onProperty :dayOfYear ;
+	owl:onProperty :minute ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid27 .
 
 _:genid27 a owl:Restriction ;
-	owl:onProperty :hour ;
+	owl:onProperty :month ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid28 .
 
 _:genid28 a owl:Restriction ;
-	owl:onProperty :minute ;
+	owl:onProperty :second ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid29 .
 
 _:genid29 a owl:Restriction ;
-	owl:onProperty :month ;
+	owl:onProperty :week ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDateTimeDescription rdfs:subClassOf _:genid30 .
 
 _:genid30 a owl:Restriction ;
-	owl:onProperty :second ;
-	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
-
-:GeneralDateTimeDescription rdfs:subClassOf _:genid31 .
-
-_:genid31 a owl:Restriction ;
-	owl:onProperty :week ;
-	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
-
-:GeneralDateTimeDescription rdfs:subClassOf _:genid32 .
-
-_:genid32 a owl:Restriction ;
 	owl:onProperty :year ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
@@ -997,51 +985,51 @@ _:genid32 a owl:Restriction ;
 # http://www.w3.org/2006/time#GeneralDurationDescription
 
 :GeneralDurationDescription a owl:Class ;
-	rdfs:subClassOf :TemporalDuration , _:genid33 .
+	rdfs:subClassOf :TemporalDuration , _:genid31 .
 
-_:genid33 a owl:Restriction ;
+_:genid31 a owl:Restriction ;
 	owl:onProperty :hasTRS ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+:GeneralDurationDescription rdfs:subClassOf _:genid32 .
+
+_:genid32 a owl:Restriction ;
+	owl:onProperty :days ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
+
+:GeneralDurationDescription rdfs:subClassOf _:genid33 .
+
+_:genid33 a owl:Restriction ;
+	owl:onProperty :hours ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDurationDescription rdfs:subClassOf _:genid34 .
 
 _:genid34 a owl:Restriction ;
-	owl:onProperty :days ;
+	owl:onProperty :minutes ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDurationDescription rdfs:subClassOf _:genid35 .
 
 _:genid35 a owl:Restriction ;
-	owl:onProperty :hours ;
+	owl:onProperty :months ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDurationDescription rdfs:subClassOf _:genid36 .
 
 _:genid36 a owl:Restriction ;
-	owl:onProperty :minutes ;
+	owl:onProperty :seconds ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDurationDescription rdfs:subClassOf _:genid37 .
 
 _:genid37 a owl:Restriction ;
-	owl:onProperty :months ;
+	owl:onProperty :weeks ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
 :GeneralDurationDescription rdfs:subClassOf _:genid38 .
 
 _:genid38 a owl:Restriction ;
-	owl:onProperty :seconds ;
-	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
-
-:GeneralDurationDescription rdfs:subClassOf _:genid39 .
-
-_:genid39 a owl:Restriction ;
-	owl:onProperty :weeks ;
-	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
-
-:GeneralDurationDescription rdfs:subClassOf _:genid40 .
-
-_:genid40 a owl:Restriction ;
 	owl:onProperty :years ;
 	owl:maxCardinality "1"^^xsd:nonNegativeInteger .
 
@@ -1070,51 +1058,51 @@ _:genid40 a owl:Restriction ;
 # http://www.w3.org/2006/time#MonthOfYear
 
 :MonthOfYear a owl:Class ;
-	rdfs:subClassOf :DateTimeDescription , _:genid41 .
+	rdfs:subClassOf :DateTimeDescription , _:genid39 .
 
-_:genid41 a owl:Restriction ;
+_:genid39 a owl:Restriction ;
 	owl:onProperty :unitType ;
 	owl:hasValue :unitMonth .
+
+:MonthOfYear rdfs:subClassOf _:genid40 .
+
+_:genid40 a owl:Restriction ;
+	owl:onProperty :day ;
+	owl:cardinality "0"^^xsd:nonNegativeInteger .
+
+:MonthOfYear rdfs:subClassOf _:genid41 .
+
+_:genid41 a owl:Restriction ;
+	owl:onProperty :hour ;
+	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :MonthOfYear rdfs:subClassOf _:genid42 .
 
 _:genid42 a owl:Restriction ;
-	owl:onProperty :day ;
+	owl:onProperty :minute ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :MonthOfYear rdfs:subClassOf _:genid43 .
 
 _:genid43 a owl:Restriction ;
-	owl:onProperty :hour ;
-	owl:cardinality "0"^^xsd:nonNegativeInteger .
+	owl:onProperty :month ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
 
 :MonthOfYear rdfs:subClassOf _:genid44 .
 
 _:genid44 a owl:Restriction ;
-	owl:onProperty :minute ;
+	owl:onProperty :second ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :MonthOfYear rdfs:subClassOf _:genid45 .
 
 _:genid45 a owl:Restriction ;
-	owl:onProperty :month ;
-	owl:cardinality "1"^^xsd:nonNegativeInteger .
+	owl:onProperty :week ;
+	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :MonthOfYear rdfs:subClassOf _:genid46 .
 
 _:genid46 a owl:Restriction ;
-	owl:onProperty :second ;
-	owl:cardinality "0"^^xsd:nonNegativeInteger .
-
-:MonthOfYear rdfs:subClassOf _:genid47 .
-
-_:genid47 a owl:Restriction ;
-	owl:onProperty :week ;
-	owl:cardinality "0"^^xsd:nonNegativeInteger .
-
-:MonthOfYear rdfs:subClassOf _:genid48 .
-
-_:genid48 a owl:Restriction ;
 	owl:onProperty :year ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
@@ -1156,16 +1144,16 @@ This is a stub class, representing the set of all temporal reference systems."""
 # http://www.w3.org/2006/time#TemporalEntity
 
 :TemporalEntity a owl:Class ;
-	owl:equivalentClass _:genid49 .
+	owl:equivalentClass _:genid47 .
 
-_:genid49 a owl:Class ;
-	owl:unionOf _:genid51 .
+_:genid47 a owl:Class ;
+	owl:unionOf _:genid49 .
 
-_:genid51 a rdf:List ;
+_:genid49 a rdf:List ;
 	rdf:first :Instant ;
-	rdf:rest _:genid50 .
+	rdf:rest _:genid48 .
 
-_:genid50 a rdf:List ;
+_:genid48 a rdf:List ;
 	rdf:first :Interval ;
 	rdf:rest rdf:nil .
 
@@ -1177,9 +1165,9 @@ _:genid50 a rdf:List ;
 # http://www.w3.org/2006/time#TemporalPosition
 
 :TemporalPosition a owl:Class ;
-	rdfs:subClassOf _:genid52 .
+	rdfs:subClassOf _:genid50 .
 
-_:genid52 a owl:Restriction ;
+_:genid50 a owl:Restriction ;
 	owl:onProperty :hasTRS ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
 
@@ -1212,28 +1200,28 @@ In the original OWL-Time the following constraint appeared:
 # http://www.w3.org/2006/time#TimePosition
 
 :TimePosition a owl:Class ;
-	rdfs:subClassOf :TemporalPosition , _:genid53 .
+	rdfs:subClassOf :TemporalPosition , _:genid51 .
 
-_:genid53 a owl:Class ;
-	owl:unionOf _:genid56 .
-
-_:genid56 a rdf:List ;
-	rdf:first _:genid57 .
-
-_:genid57 a owl:Restriction ;
-	owl:onProperty :nominalPosition ;
-	owl:cardinality "1"^^xsd:nonNegativeInteger .
-
-_:genid56 rdf:rest _:genid54 .
+_:genid51 a owl:Class ;
+	owl:unionOf _:genid54 .
 
 _:genid54 a rdf:List ;
 	rdf:first _:genid55 .
 
 _:genid55 a owl:Restriction ;
+	owl:onProperty :nominalPosition ;
+	owl:cardinality "1"^^xsd:nonNegativeInteger .
+
+_:genid54 rdf:rest _:genid52 .
+
+_:genid52 a rdf:List ;
+	rdf:first _:genid53 .
+
+_:genid53 a owl:Restriction ;
 	owl:onProperty :numericPosition ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
 
-_:genid54 rdf:rest rdf:nil .
+_:genid52 rdf:rest rdf:nil .
 
 :TimePosition rdfs:comment "A temporal position described using either a (nominal) value from an ordinal reference system, or a (numeric) value in a temporal coordinate system. "@en , "Una posición temporal descrita utilizando bien un valor (nominal) de un sistema de referencia ordinal, o un valor (numérico) en un sistema de coordenadas temporales."@es ;
 	rdfs:label "Time position"@en , "posición de tiempo"@es ;
@@ -1271,45 +1259,45 @@ Detailed guidance about working with time zones is given in http://www.w3.org/TR
 # http://www.w3.org/2006/time#Year
 
 :Year a owl:Class ;
-	rdfs:subClassOf :DurationDescription , _:genid58 .
+	rdfs:subClassOf :DurationDescription , _:genid56 .
+
+_:genid56 a owl:Restriction ;
+	owl:onProperty :days ;
+	owl:cardinality "0"^^xsd:nonNegativeInteger .
+
+:Year rdfs:subClassOf _:genid57 .
+
+_:genid57 a owl:Restriction ;
+	owl:onProperty :hours ;
+	owl:cardinality "0"^^xsd:nonNegativeInteger .
+
+:Year rdfs:subClassOf _:genid58 .
 
 _:genid58 a owl:Restriction ;
-	owl:onProperty :days ;
+	owl:onProperty :minutes ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :Year rdfs:subClassOf _:genid59 .
 
 _:genid59 a owl:Restriction ;
-	owl:onProperty :hours ;
+	owl:onProperty :months ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :Year rdfs:subClassOf _:genid60 .
 
 _:genid60 a owl:Restriction ;
-	owl:onProperty :minutes ;
+	owl:onProperty :seconds ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :Year rdfs:subClassOf _:genid61 .
 
 _:genid61 a owl:Restriction ;
-	owl:onProperty :months ;
+	owl:onProperty :weeks ;
 	owl:cardinality "0"^^xsd:nonNegativeInteger .
 
 :Year rdfs:subClassOf _:genid62 .
 
 _:genid62 a owl:Restriction ;
-	owl:onProperty :seconds ;
-	owl:cardinality "0"^^xsd:nonNegativeInteger .
-
-:Year rdfs:subClassOf _:genid63 .
-
-_:genid63 a owl:Restriction ;
-	owl:onProperty :weeks ;
-	owl:cardinality "0"^^xsd:nonNegativeInteger .
-
-:Year rdfs:subClassOf _:genid64 .
-
-_:genid64 a owl:Restriction ;
 	owl:onProperty :years ;
 	owl:cardinality "1"^^xsd:nonNegativeInteger .
 
@@ -1330,10 +1318,6 @@ It is deprecated in this edition of OWL-Time. """ ;
 # #
 # #################################################################
 # 
-# 
-# http://www.opengis.net/def/uom/ISO-8601/0/Gregorian
-
-<http://www.opengis.net/def/uom/ISO-8601/0/Gregorian> a owl:NamedIndividual .
 # 
 # http://www.w3.org/2006/time#Friday
 
@@ -1508,9 +1492,9 @@ It is deprecated in this edition of OWL-Time. """ ;
 	skos:prefLabel "1 년"@kr , "Jahr"@de , "an"@fr , "anno"@it , "ano"@pt , "jaar"@nl , "rok"@pl , "un año"@es , "year"@en , "один год"@ru , "سنة واحدة"@ar , "一年"@ja , "一年"@zh .
 # 
 
+_:genid63 xsd:pattern "---(0[1-9]|[1-9][0-9])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+_:genid64 xsd:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
 _:genid65 xsd:pattern "--(0[1-9]|1[0-9]|20)(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
-
-_:genid66 xsd:pattern "---(0[1-9]|[1-9][0-9])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
-
-_:genid67 xsd:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
 # Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
