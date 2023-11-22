@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL/"
-     xml:base="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL/"
+<rdf:RDF xmlns="https://w3id.org/def/phenowl/"
+     xml:base="https://w3id.org/def/phenowl/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -10,7 +10,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:adms="http://www.w3.org/ns/adms#"
      xmlns:gufo="http://purl.org/nemo/gufo#"
-     xmlns:phen="http://www.semanticweb.org/alencga1/ontologies/2023/2/PhenOWL#"
+     xmlns:phen="https://w3id.org/def/phenowl#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:seas="https://w3id.org/seas/"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -20,7 +20,6 @@
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:phenowl="https://w3id.org/def/phenowl#"
      xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="https://w3id.org/def/phenowl">
@@ -380,9 +379,9 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#O1">
         <rdf:type rdf:resource="https://w3id.org/def/phenowl#Observation"/>
         <gufo:hasEndPoint rdf:resource="https://w3id.org/def/phenowl#t2"/>
-        <phenowl:happensIn rdf:resource="https://w3id.org/def/phenowl#s1"/>
-        <phenowl:hasTimeInterval rdf:resource="https://w3id.org/def/phenowl#ti1"/>
-        <phenowl:observationOf rdf:resource="https://w3id.org/def/phenowl#PO1"/>
+        <phen:happensIn rdf:resource="https://w3id.org/def/phenowl#s1"/>
+        <phen:hasTimeInterval rdf:resource="https://w3id.org/def/phenowl#ti1"/>
+        <phen:observationOf rdf:resource="https://w3id.org/def/phenowl#PO1"/>
     </owl:NamedIndividual>
     
 
@@ -392,8 +391,8 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#O2">
         <rdf:type rdf:resource="https://w3id.org/def/phenowl#Observation"/>
         <gufo:hasBeginPoint rdf:resource="https://w3id.org/def/phenowl#t3"/>
-        <phenowl:happensIn rdf:resource="https://w3id.org/def/phenowl#s3"/>
-        <phenowl:observationOf rdf:resource="https://w3id.org/def/phenowl#PO2"/>
+        <phen:happensIn rdf:resource="https://w3id.org/def/phenowl#s3"/>
+        <phen:observationOf rdf:resource="https://w3id.org/def/phenowl#PO2"/>
     </owl:NamedIndividual>
     
 
@@ -410,7 +409,7 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#PO1">
         <rdf:type rdf:resource="https://w3id.org/def/phenowl#PhenomenonOccurrence"/>
-        <phenowl:fromPhenomenon rdf:resource="https://w3id.org/def/phenowl#P1"/>
+        <phen:fromPhenomenon rdf:resource="https://w3id.org/def/phenowl#P1"/>
     </owl:NamedIndividual>
     
 
@@ -419,7 +418,7 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#PO2">
         <rdf:type rdf:resource="https://w3id.org/def/phenowl#PhenomenonOccurrence"/>
-        <phenowl:fromPhenomenon rdf:resource="https://w3id.org/def/phenowl#P1"/>
+        <phen:fromPhenomenon rdf:resource="https://w3id.org/def/phenowl#P1"/>
     </owl:NamedIndividual>
     
 
@@ -456,8 +455,8 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#pr1">
         <rdf:type rdf:resource="https://w3id.org/def/phenowl#Presence"/>
         <gufo:hasBeginPoint rdf:resource="https://w3id.org/def/phenowl#t3"/>
-        <phenowl:hasTimeInterval rdf:resource="https://w3id.org/def/phenowl#ti2"/>
-        <phenowl:spatialPresenceIn rdf:resource="https://w3id.org/def/phenowl#f1"/>
+        <phen:hasTimeInterval rdf:resource="https://w3id.org/def/phenowl#ti2"/>
+        <phen:spatialPresenceIn rdf:resource="https://w3id.org/def/phenowl#f1"/>
     </owl:NamedIndividual>
     
 
@@ -466,7 +465,7 @@ I.e. &quot;Vacines&quot;, &quot;Pantients of COVID-19&quot; and &quot;Pneumonia&
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#s1">
         <rdf:type rdf:resource="https://w3id.org/seas/System"/>
-        <phenowl:happensIn rdf:resource="https://w3id.org/def/phenowl#s1"/>
+        <phen:happensIn rdf:resource="https://w3id.org/def/phenowl#s1"/>
         <seas:connectedTo rdf:resource="https://w3id.org/def/phenowl#s3"/>
     </owl:NamedIndividual>
     
