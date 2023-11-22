@@ -1,0 +1,400 @@
+{
+  "@context" : {
+    "isDerivedFrom" : {
+      "@id" : "http://purl.org/nemo/gufo#isDerivedFrom",
+      "@type" : "@id"
+    },
+    "Perdurants" : {
+      "@id" : "http://purl.org/nemo/gufo#Perdurants"
+    },
+    "IntrinsicAspect" : {
+      "@id" : "http://purl.org/nemo/gufo#IntrinsicAspect"
+    },
+    "Situation" : {
+      "@id" : "http://purl.org/nemo/gufo#Situation"
+    },
+    "ConcreteEntity" : {
+      "@id" : "http://purl.org/nemo/gufo#ConcreteEntity"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "ConcreteEntityType" : {
+      "@id" : "http://purl.org/nemo/gufo#ConcreteEntityType"
+    },
+    "Mixin" : {
+      "@id" : "http://purl.org/nemo/gufo#Mixin"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "IntrinsicMode" : {
+      "@id" : "http://purl.org/nemo/gufo#IntrinsicMode"
+    },
+    "AbstractEntity" : {
+      "@id" : "http://purl.org/nemo/gufo#AbstractEntity"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "Type" : {
+      "@id" : "http://purl.org/nemo/gufo#Type"
+    },
+    "ComparativeRelationshipType" : {
+      "@id" : "http://purl.org/nemo/gufo#ComparativeRelationshipType"
+    },
+    "Category" : {
+      "@id" : "http://purl.org/nemo/gufo#Category"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "PhaseMixin" : {
+      "@id" : "http://purl.org/nemo/gufo#PhaseMixin"
+    },
+    "concernsQualityType" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsQualityType",
+      "@type" : "@id"
+    },
+    "ComplexEvent" : {
+      "@id" : "http://purl.org/nemo/gufo#ComplexEvent"
+    },
+    "Participation" : {
+      "@id" : "http://purl.org/nemo/gufo#Participation"
+    },
+    "Object" : {
+      "@id" : "http://purl.org/nemo/gufo#Object"
+    },
+    "concernsNonRigidType" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsNonRigidType",
+      "@type" : "@id"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "contributedToTrigger" : {
+      "@id" : "http://purl.org/nemo/gufo#contributedToTrigger",
+      "@type" : "@id"
+    },
+    "TemporaryRelationshipSituation" : {
+      "@id" : "http://purl.org/nemo/gufo#TemporaryRelationshipSituation"
+    },
+    "SubKind" : {
+      "@id" : "http://purl.org/nemo/gufo#SubKind"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "isCollectionMemberOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isCollectionMemberOf",
+      "@type" : "@id"
+    },
+    "AntiRigidType" : {
+      "@id" : "http://purl.org/nemo/gufo#AntiRigidType"
+    },
+    "ExtrinsicMode" : {
+      "@id" : "http://purl.org/nemo/gufo#ExtrinsicMode"
+    },
+    "concernsTemporaryWhole" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsTemporaryWhole",
+      "@type" : "@id"
+    },
+    "NonRigidType" : {
+      "@id" : "http://purl.org/nemo/gufo#NonRigidType"
+    },
+    "RelationshipType" : {
+      "@id" : "http://purl.org/nemo/gufo#RelationshipType"
+    },
+    "mediates" : {
+      "@id" : "http://purl.org/nemo/gufo#mediates",
+      "@type" : "@id"
+    },
+    "hasReifiedQualityValue" : {
+      "@id" : "http://purl.org/nemo/gufo#hasReifiedQualityValue",
+      "@type" : "@id"
+    },
+    "Event" : {
+      "@id" : "http://purl.org/nemo/gufo#Event"
+    },
+    "standsInQualifiedInstantiation" : {
+      "@id" : "http://purl.org/nemo/gufo#standsInQualifiedInstantiation",
+      "@type" : "@id"
+    },
+    "standsIn" : {
+      "@id" : "http://purl.org/nemo/gufo#standsIn",
+      "@type" : "@id"
+    },
+    "isObjectProperPartOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isObjectProperPartOf",
+      "@type" : "@id"
+    },
+    "EventType" : {
+      "@id" : "http://purl.org/nemo/gufo#EventType"
+    },
+    "AtomicEvent" : {
+      "@id" : "http://purl.org/nemo/gufo#AtomicEvent"
+    },
+    "emergesFrom" : {
+      "@id" : "http://purl.org/nemo/gufo#emergesFrom",
+      "@type" : "@id"
+    },
+    "SemiRigidType" : {
+      "@id" : "http://purl.org/nemo/gufo#SemiRigidType"
+    },
+    "AbstractEntityType" : {
+      "@id" : "http://purl.org/nemo/gufo#AbstractEntityType"
+    },
+    "Quality" : {
+      "@id" : "http://purl.org/nemo/gufo#Quality"
+    },
+    "Endurant" : {
+      "@id" : "http://purl.org/nemo/gufo#Endurant"
+    },
+    "concernsRelationshipType" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsRelationshipType",
+      "@type" : "@id"
+    },
+    "QualityValueAttributionSituation" : {
+      "@id" : "http://purl.org/nemo/gufo#QualityValueAttributionSituation"
+    },
+    "History" : {
+      "@id" : "http://purl.org/nemo/gufo#History"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Role" : {
+      "@id" : "http://purl.org/nemo/gufo#Role"
+    },
+    "concernsRelatedEndurant" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsRelatedEndurant",
+      "@type" : "@id"
+    },
+    "hasBeginPoint" : {
+      "@id" : "http://purl.org/nemo/gufo#hasBeginPoint",
+      "@type" : "@id"
+    },
+    "FixedCollection" : {
+      "@id" : "http://purl.org/nemo/gufo#FixedCollection"
+    },
+    "concernsQualityValue" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsQualityValue"
+    },
+    "isComponentOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isComponentOf",
+      "@type" : "@id"
+    },
+    "constitutes" : {
+      "@id" : "http://purl.org/nemo/gufo#constitutes",
+      "@type" : "@id"
+    },
+    "isAspectProperPartOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isAspectProperPartOf",
+      "@type" : "@id"
+    },
+    "hasEndPointInXSDDateTimeStamp" : {
+      "@id" : "http://purl.org/nemo/gufo#hasEndPointInXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasQualityValue" : {
+      "@id" : "http://purl.org/nemo/gufo#hasQualityValue"
+    },
+    "RoleMixin" : {
+      "@id" : "http://purl.org/nemo/gufo#RoleMixin"
+    },
+    "concernsConstitutedEndurant" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsConstitutedEndurant",
+      "@type" : "@id"
+    },
+    "Phase" : {
+      "@id" : "http://purl.org/nemo/gufo#Phase"
+    },
+    "Quantity" : {
+      "@id" : "http://purl.org/nemo/gufo#Quantity"
+    },
+    "hasBeginPointInXSDDate" : {
+      "@id" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "concernsReifiedQualityValue" : {
+      "@id" : "http://purl.org/nemo/gufo#concernsReifiedQualityValue",
+      "@type" : "@id"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "isSubQuantityOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isSubQuantityOf",
+      "@type" : "@id"
+    },
+    "EndurantType" : {
+      "@id" : "http://purl.org/nemo/gufo#EndurantType"
+    },
+    "NonSortal" : {
+      "@id" : "http://purl.org/nemo/gufo#NonSortal"
+    },
+    "isProperPartOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isProperPartOf",
+      "@type" : "@id"
+    },
+    "hasAssociatedQualityValueType" : {
+      "@id" : "http://purl.org/nemo/gufo#hasAssociatedQualityValueType",
+      "@type" : "@id"
+    },
+    "Aspect" : {
+      "@id" : "http://purl.org/nemo/gufo#Aspect"
+    },
+    "standsInQualifiedConstitution" : {
+      "@id" : "http://purl.org/nemo/gufo#standsInQualifiedConstitution",
+      "@type" : "@id"
+    },
+    "SituationType" : {
+      "@id" : "http://purl.org/nemo/gufo#SituationType"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "isSubCollectionOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isSubCollectionOf",
+      "@type" : "@id"
+    },
+    "standsInQualifiedParthood" : {
+      "@id" : "http://purl.org/nemo/gufo#standsInQualifiedParthood",
+      "@type" : "@id"
+    },
+    "isSituationProperPartOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isSituationProperPartOf",
+      "@type" : "@id"
+    },
+    "Relator" : {
+      "@id" : "http://purl.org/nemo/gufo#Relator"
+    },
+    "standsInQualifiedAttribution" : {
+      "@id" : "http://purl.org/nemo/gufo#standsInQualifiedAttribution",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "wasTerminatedIn" : {
+      "@id" : "http://purl.org/nemo/gufo#wasTerminatedIn",
+      "@type" : "@id"
+    },
+    "TemporaryConstitutionSituation" : {
+      "@id" : "http://purl.org/nemo/gufo#TemporaryConstitutionSituation"
+    },
+    "inheresIn" : {
+      "@id" : "http://purl.org/nemo/gufo#inheresIn",
+      "@type" : "@id"
+    },
+    "standsInQualifiedRelationship" : {
+      "@id" : "http://purl.org/nemo/gufo#standsInQualifiedRelationship",
+      "@type" : "@id"
+    },
+    "Scene" : {
+      "@id" : "http://purl.org/nemo/gufo#Scene"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "hasValueComponent" : {
+      "@id" : "http://purl.org/nemo/gufo#hasValueComponent"
+    },
+    "Entity" : {
+      "@id" : "http://purl.org/nemo/gufo#Entity"
+    },
+    "TemporaryParthoodSituation" : {
+      "@id" : "http://purl.org/nemo/gufo#TemporaryParthoodSituation"
+    },
+    "VariableCollection" : {
+      "@id" : "http://purl.org/nemo/gufo#VariableCollection"
+    },
+    "RigidType" : {
+      "@id" : "http://purl.org/nemo/gufo#RigidType"
+    },
+    "hasEndPointInXSDDate" : {
+      "@id" : "http://purl.org/nemo/gufo#hasEndPointInXSDDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "historicallyDependsOn" : {
+      "@id" : "http://purl.org/nemo/gufo#historicallyDependsOn",
+      "@type" : "@id"
+    },
+    "categorizes" : {
+      "@id" : "http://purl.org/nemo/gufo#categorizes",
+      "@type" : "@id"
+    },
+    "manifestedIn" : {
+      "@id" : "http://purl.org/nemo/gufo#manifestedIn",
+      "@type" : "@id"
+    },
+    "PerdurantType" : {
+      "@id" : "http://purl.org/nemo/gufo#PerdurantType"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Sortal" : {
+      "@id" : "http://purl.org/nemo/gufo#Sortal"
+    },
+    "ExtrinsicAspect" : {
+      "@id" : "http://purl.org/nemo/gufo#ExtrinsicAspect"
+    },
+    "FunctionalComplex" : {
+      "@id" : "http://purl.org/nemo/gufo#FunctionalComplex"
+    },
+    "TemporaryInstantiationSituation" : {
+      "@id" : "http://purl.org/nemo/gufo#TemporaryInstantiationSituation"
+    },
+    "broughtAbout" : {
+      "@id" : "http://purl.org/nemo/gufo#broughtAbout",
+      "@type" : "@id"
+    },
+    "externallyDependsOn" : {
+      "@id" : "http://purl.org/nemo/gufo#externallyDependsOn",
+      "@type" : "@id"
+    },
+    "partitions" : {
+      "@id" : "http://purl.org/nemo/gufo#partitions",
+      "@type" : "@id"
+    },
+    "hasBeginPointInXSDDateTimeStamp" : {
+      "@id" : "http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "hasEndPoint" : {
+      "@id" : "http://purl.org/nemo/gufo#hasEndPoint",
+      "@type" : "@id"
+    },
+    "MaterialRelationshipType" : {
+      "@id" : "http://purl.org/nemo/gufo#MaterialRelationshipType"
+    },
+    "QualityValue" : {
+      "@id" : "http://purl.org/nemo/gufo#QualityValue"
+    },
+    "participatedIn" : {
+      "@id" : "http://purl.org/nemo/gufo#participatedIn",
+      "@type" : "@id"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Kind" : {
+      "@id" : "http://purl.org/nemo/gufo#Kind"
+    },
+    "wasCreatedIn" : {
+      "@id" : "http://purl.org/nemo/gufo#wasCreatedIn",
+      "@type" : "@id"
+    },
+    "Collection" : {
+      "@id" : "http://purl.org/nemo/gufo#Collection"
+    },
+    "isEventProperPartOf" : {
+      "@id" : "http://purl.org/nemo/gufo#isEventProperPartOf",
+      "@type" : "@id"
+    }
+  }
+}

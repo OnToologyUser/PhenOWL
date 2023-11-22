@@ -1,0 +1,376 @@
+<h2 id="overv" class="list">gUFO: A Lightweight Implementation of the Unified Foundational Ontology (UFO): Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#AbstractEntity" title="http://purl.org/nemo/gufo#AbstractEntity">AbstractIndividual</a>
+   </li>
+   <li>
+      <a href="#AbstractEntityType" title="http://purl.org/nemo/gufo#AbstractEntityType">AbstractIndividualType</a>
+   </li>
+   <li>
+      <a href="#AntiRigidType" title="http://purl.org/nemo/gufo#AntiRigidType">AntiRigidType</a>
+   </li>
+   <li>
+      <a href="#Aspect" title="http://purl.org/nemo/gufo#Aspect">Aspect</a>
+   </li>
+   <li>
+      <a href="#AtomicEvent" title="http://purl.org/nemo/gufo#AtomicEvent">
+         <span>atomic event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Category" title="http://purl.org/nemo/gufo#Category">Category</a>
+   </li>
+   <li>
+      <a href="#Collection" title="http://purl.org/nemo/gufo#Collection">Collection</a>
+   </li>
+   <li>
+      <a href="#ComparativeRelationshipType"
+         title="http://purl.org/nemo/gufo#ComparativeRelationshipType">ComparativeRelationshipType</a>
+   </li>
+   <li>
+      <a href="#ComplexEvent" title="http://purl.org/nemo/gufo#ComplexEvent">
+         <span>complex event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ConcreteEntity" title="http://purl.org/nemo/gufo#ConcreteEntity">ConcreteIndividual</a>
+   </li>
+   <li>
+      <a href="#ConcreteEntityType" title="http://purl.org/nemo/gufo#ConcreteEntityType">ConcreteIndividualType</a>
+   </li>
+   <li>
+      <a href="#Endurant" title="http://purl.org/nemo/gufo#Endurant">Endurant</a>
+   </li>
+   <li>
+      <a href="#EndurantType" title="http://purl.org/nemo/gufo#EndurantType">EndurantType</a>
+   </li>
+   <li>
+      <a href="#Event" title="http://purl.org/nemo/gufo#Event">Event</a>
+   </li>
+   <li>
+      <a href="#EventType" title="http://purl.org/nemo/gufo#EventType">EventType</a>
+   </li>
+   <li>
+      <a href="#ExtrinsicAspect" title="http://purl.org/nemo/gufo#ExtrinsicAspect">ExtrinsicAspect</a>
+   </li>
+   <li>
+      <a href="#ExtrinsicMode" title="http://purl.org/nemo/gufo#ExtrinsicMode">ExtrinsicMode</a>
+   </li>
+   <li>
+      <a href="#FixedCollection" title="http://purl.org/nemo/gufo#FixedCollection">FixedCollection</a>
+   </li>
+   <li>
+      <a href="#FunctionalComplex" title="http://purl.org/nemo/gufo#FunctionalComplex">FunctionalComplex</a>
+   </li>
+   <li>
+      <a href="#History" title="http://purl.org/nemo/gufo#History">
+         <span>history</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Entity" title="http://purl.org/nemo/gufo#Entity">Individual</a>
+   </li>
+   <li>
+      <a href="#http://www.w3.org/2006/time#Instant" title="http://www.w3.org/2006/time#Instant">Instant</a>
+   </li>
+   <li>
+      <a href="#IntrinsicAspect" title="http://purl.org/nemo/gufo#IntrinsicAspect">IntrinsicAspect</a>
+   </li>
+   <li>
+      <a href="#IntrinsicMode" title="http://purl.org/nemo/gufo#IntrinsicMode">IntrinsicMode</a>
+   </li>
+   <li>
+      <a href="#Kind" title="http://purl.org/nemo/gufo#Kind">Kind</a>
+   </li>
+   <li>
+      <a href="#MaterialRelationshipType"
+         title="http://purl.org/nemo/gufo#MaterialRelationshipType">MaterialRelationshipType</a>
+   </li>
+   <li>
+      <a href="#Mixin" title="http://purl.org/nemo/gufo#Mixin">Mixin</a>
+   </li>
+   <li>
+      <a href="#NonRigidType" title="http://purl.org/nemo/gufo#NonRigidType">NonRigidType</a>
+   </li>
+   <li>
+      <a href="#NonSortal" title="http://purl.org/nemo/gufo#NonSortal">NonSortal</a>
+   </li>
+   <li>
+      <a href="#Object" title="http://purl.org/nemo/gufo#Object">Object</a>
+   </li>
+   <li>
+      <a href="#Participation" title="http://purl.org/nemo/gufo#Participation">Participation</a>
+   </li>
+   <li>
+      <a href="#PerdurantType" title="http://purl.org/nemo/gufo#PerdurantType">
+         <span>perdurant type</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Perdurants" title="http://purl.org/nemo/gufo#Perdurants">
+         <span>perdurants</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Phase" title="http://purl.org/nemo/gufo#Phase">Phase</a>
+   </li>
+   <li>
+      <a href="#PhaseMixin" title="http://purl.org/nemo/gufo#PhaseMixin">PhaseMixin</a>
+   </li>
+   <li>
+      <a href="#Quality" title="http://purl.org/nemo/gufo#Quality">Quality</a>
+   </li>
+   <li>
+      <a href="#QualityValue" title="http://purl.org/nemo/gufo#QualityValue">QualityValue</a>
+   </li>
+   <li>
+      <a href="#QualityValueAttributionSituation"
+         title="http://purl.org/nemo/gufo#QualityValueAttributionSituation">QualityValueAttributionSituation</a>
+   </li>
+   <li>
+      <a href="#Quantity" title="http://purl.org/nemo/gufo#Quantity">Quantity</a>
+   </li>
+   <li>
+      <a href="#RelationshipType" title="http://purl.org/nemo/gufo#RelationshipType">RelationshipType</a>
+   </li>
+   <li>
+      <a href="#Relator" title="http://purl.org/nemo/gufo#Relator">Relator</a>
+   </li>
+   <li>
+      <a href="#RigidType" title="http://purl.org/nemo/gufo#RigidType">RigidType</a>
+   </li>
+   <li>
+      <a href="#Role" title="http://purl.org/nemo/gufo#Role">Role</a>
+   </li>
+   <li>
+      <a href="#RoleMixin" title="http://purl.org/nemo/gufo#RoleMixin">RoleMixin</a>
+   </li>
+   <li>
+      <a href="#Scene" title="http://purl.org/nemo/gufo#Scene">
+         <span>scene</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SemiRigidType" title="http://purl.org/nemo/gufo#SemiRigidType">SemiRigidType</a>
+   </li>
+   <li>
+      <a href="#Situation" title="http://purl.org/nemo/gufo#Situation">Situation</a>
+   </li>
+   <li>
+      <a href="#SituationType" title="http://purl.org/nemo/gufo#SituationType">SituationType</a>
+   </li>
+   <li>
+      <a href="#Sortal" title="http://purl.org/nemo/gufo#Sortal">Sortal</a>
+   </li>
+   <li>
+      <a href="#SubKind" title="http://purl.org/nemo/gufo#SubKind">SubKind</a>
+   </li>
+   <li>
+      <a href="#TemporaryConstitutionSituation"
+         title="http://purl.org/nemo/gufo#TemporaryConstitutionSituation">TemporaryConstitutionSituation</a>
+   </li>
+   <li>
+      <a href="#TemporaryInstantiationSituation"
+         title="http://purl.org/nemo/gufo#TemporaryInstantiationSituation">TemporaryInstantiationSituation</a>
+   </li>
+   <li>
+      <a href="#TemporaryParthoodSituation"
+         title="http://purl.org/nemo/gufo#TemporaryParthoodSituation">TemporaryParthoodSituation</a>
+   </li>
+   <li>
+      <a href="#TemporaryRelationshipSituation"
+         title="http://purl.org/nemo/gufo#TemporaryRelationshipSituation">TemporaryRelationshipSituation</a>
+   </li>
+   <li>
+      <a href="#Type" title="http://purl.org/nemo/gufo#Type">Type</a>
+   </li>
+   <li>
+      <a href="#VariableCollection" title="http://purl.org/nemo/gufo#VariableCollection">VariableCollection</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#broughtAbout" title="http://purl.org/nemo/gufo#broughtAbout">broughtAbout</a>
+   </li>
+   <li>
+      <a href="#categorizes" title="http://purl.org/nemo/gufo#categorizes">categorizes</a>
+   </li>
+   <li>
+      <a href="#concernsConstitutedEndurant"
+         title="http://purl.org/nemo/gufo#concernsConstitutedEndurant">concernsConstitutedEndurant</a>
+   </li>
+   <li>
+      <a href="#concernsNonRigidType" title="http://purl.org/nemo/gufo#concernsNonRigidType">concernsNonRigidType</a>
+   </li>
+   <li>
+      <a href="#concernsQualityType" title="http://purl.org/nemo/gufo#concernsQualityType">concernsQualityType</a>
+   </li>
+   <li>
+      <a href="#concernsReifiedQualityValue"
+         title="http://purl.org/nemo/gufo#concernsReifiedQualityValue">concernsReifiedQualityValue</a>
+   </li>
+   <li>
+      <a href="#concernsRelatedEndurant"
+         title="http://purl.org/nemo/gufo#concernsRelatedEndurant">concernsRelatedEndurant</a>
+   </li>
+   <li>
+      <a href="#concernsRelationshipType"
+         title="http://purl.org/nemo/gufo#concernsRelationshipType">concernsRelationshipType</a>
+   </li>
+   <li>
+      <a href="#concernsTemporaryWhole" title="http://purl.org/nemo/gufo#concernsTemporaryWhole">concernsTemporaryWhole</a>
+   </li>
+   <li>
+      <a href="#constitutes" title="http://purl.org/nemo/gufo#constitutes">constitutes</a>
+   </li>
+   <li>
+      <a href="#contributedToTrigger" title="http://purl.org/nemo/gufo#contributedToTrigger">contributedToTrigger</a>
+   </li>
+   <li>
+      <a href="#emergesFrom" title="http://purl.org/nemo/gufo#emergesFrom">emergesFrom</a>
+   </li>
+   <li>
+      <a href="#externallyDependsOn" title="http://purl.org/nemo/gufo#externallyDependsOn">externallyDependsOn</a>
+   </li>
+   <li>
+      <a href="#hasAssociatedQualityValueType"
+         title="http://purl.org/nemo/gufo#hasAssociatedQualityValueType">hasAssociatedQualityValueType</a>
+   </li>
+   <li>
+      <a href="#hasBeginPoint" title="http://purl.org/nemo/gufo#hasBeginPoint">hasBeginPoint</a>
+   </li>
+   <li>
+      <a href="#hasEndPoint" title="http://purl.org/nemo/gufo#hasEndPoint">hasEndPoint</a>
+   </li>
+   <li>
+      <a href="#hasReifiedQualityValue" title="http://purl.org/nemo/gufo#hasReifiedQualityValue">hasReifiedQualityValue</a>
+   </li>
+   <li>
+      <a href="#historicallyDependsOn" title="http://purl.org/nemo/gufo#historicallyDependsOn">historicallyDependsOn</a>
+   </li>
+   <li>
+      <a href="#inheresIn" title="http://purl.org/nemo/gufo#inheresIn">inheresIn</a>
+   </li>
+   <li>
+      <a href="#isAspectProperPartOf" title="http://purl.org/nemo/gufo#isAspectProperPartOf">isAspectProperPartOf</a>
+   </li>
+   <li>
+      <a href="#isCollectionMemberOf" title="http://purl.org/nemo/gufo#isCollectionMemberOf">isCollectionMemberOf</a>
+   </li>
+   <li>
+      <a href="#isComponentOf" title="http://purl.org/nemo/gufo#isComponentOf">isComponentOf</a>
+   </li>
+   <li>
+      <a href="#isDerivedFrom" title="http://purl.org/nemo/gufo#isDerivedFrom">isDerivedFrom</a>
+   </li>
+   <li>
+      <a href="#isEventProperPartOf" title="http://purl.org/nemo/gufo#isEventProperPartOf">isEventProperPartOf</a>
+   </li>
+   <li>
+      <a href="#isObjectProperPartOf" title="http://purl.org/nemo/gufo#isObjectProperPartOf">isObjectProperPartOf</a>
+   </li>
+   <li>
+      <a href="#isProperPartOf" title="http://purl.org/nemo/gufo#isProperPartOf">isProperPartOf</a>
+   </li>
+   <li>
+      <a href="#isSituationProperPartOf"
+         title="http://purl.org/nemo/gufo#isSituationProperPartOf">isSituationProperPartOf</a>
+   </li>
+   <li>
+      <a href="#isSubCollectionOf" title="http://purl.org/nemo/gufo#isSubCollectionOf">isSubCollectionOf</a>
+   </li>
+   <li>
+      <a href="#isSubQuantityOf" title="http://purl.org/nemo/gufo#isSubQuantityOf">isSubQuantityOf</a>
+   </li>
+   <li>
+      <a href="#manifestedIn" title="http://purl.org/nemo/gufo#manifestedIn">manifestedIn</a>
+   </li>
+   <li>
+      <a href="#mediates" title="http://purl.org/nemo/gufo#mediates">mediates</a>
+   </li>
+   <li>
+      <a href="#participatedIn" title="http://purl.org/nemo/gufo#participatedIn">participatedIn</a>
+   </li>
+   <li>
+      <a href="#partitions" title="http://purl.org/nemo/gufo#partitions">partitions</a>
+   </li>
+   <li>
+      <a href="#standsIn" title="http://purl.org/nemo/gufo#standsIn">standsIn</a>
+   </li>
+   <li>
+      <a href="#standsInQualifiedAttribution"
+         title="http://purl.org/nemo/gufo#standsInQualifiedAttribution">standsInQualifiedAttribution</a>
+   </li>
+   <li>
+      <a href="#standsInQualifiedConstitution"
+         title="http://purl.org/nemo/gufo#standsInQualifiedConstitution">standsInQualifiedConstitution</a>
+   </li>
+   <li>
+      <a href="#standsInQualifiedInstantiation"
+         title="http://purl.org/nemo/gufo#standsInQualifiedInstantiation">standsInQualifiedInstantiation</a>
+   </li>
+   <li>
+      <a href="#standsInQualifiedParthood"
+         title="http://purl.org/nemo/gufo#standsInQualifiedParthood">standsInQualifiedParthood</a>
+   </li>
+   <li>
+      <a href="#standsInQualifiedRelationship"
+         title="http://purl.org/nemo/gufo#standsInQualifiedRelationship">standsInQualifiedRelationship</a>
+   </li>
+   <li>
+      <a href="#wasCreatedIn" title="http://purl.org/nemo/gufo#wasCreatedIn">wasCreatedIn</a>
+   </li>
+   <li>
+      <a href="#wasTerminatedIn" title="http://purl.org/nemo/gufo#wasTerminatedIn">wasTerminatedIn</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#concernsQualityValue" title="http://purl.org/nemo/gufo#concernsQualityValue">concernsQualityValue</a>
+   </li>
+   <li>
+      <a href="#hasBeginPointInXSDDate" title="http://purl.org/nemo/gufo#hasBeginPointInXSDDate">hasBeginPointInXSDDate</a>
+   </li>
+   <li>
+      <a href="#hasBeginPointInXSDDateTimeStamp"
+         title="http://purl.org/nemo/gufo#hasBeginPointInXSDDateTimeStamp">hasBeginPointInXSDDateTimeStamp</a>
+   </li>
+   <li>
+      <a href="#hasEndPointInXSDDate" title="http://purl.org/nemo/gufo#hasEndPointInXSDDate">hasEndPointInXSDDate</a>
+   </li>
+   <li>
+      <a href="#hasEndPointInXSDDateTimeStamp"
+         title="http://purl.org/nemo/gufo#hasEndPointInXSDDateTimeStamp">hasEndPointInXSDDateTimeStamp</a>
+   </li>
+   <li>
+      <a href="#hasQualityValue" title="http://purl.org/nemo/gufo#hasQualityValue">hasQualityValue</a>
+   </li>
+   <li>
+      <a href="#hasValueComponent" title="http://purl.org/nemo/gufo#hasValueComponent">hasValueComponent</a>
+   </li>
+</ul><h4>Named Individuals</h4><ul xmlns:extra="https://w3id.org/extra#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#DataScientist" title="http://purl.org/nemo/gufo#DataScientist">
+         <span>data scientist</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Matheus" title="http://purl.org/nemo/gufo#Matheus">
+         <span>matheus</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Person" title="http://purl.org/nemo/gufo#Person">
+         <span>person</span>
+      </a>
+   </li>
+</ul>
