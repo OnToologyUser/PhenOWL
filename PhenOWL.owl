@@ -24,7 +24,6 @@
      xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#">
     <owl:Ontology rdf:about="https://w3id.org/def/phenowl">
         <owl:versionIRI rdf:resource="https://w3id.org/def/phenowl/1.0.0"/>
-        <owl:imports rdf:resource="http://purl.org/nemo/gufo#/1.0.0"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/sf"/>
         <owl:imports rdf:resource="http://www.w3.org/2006/time#2016"/>
@@ -5319,6 +5318,12 @@ Examples of continuous phenomena, or “spatial fields”, include elevation and
     
 
 
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#Collection -->
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Collection">
@@ -6689,120 +6694,6 @@ Figure below illustrates systems and their connections:
     
 
 
-    <!-- https://w3id.org/def/phenowl#O1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#O1">
-        <rdf:type rdf:resource="https://w3id.org/def/phenowl#Observation"/>
-        <gufo:hasEndPoint rdf:resource="https://w3id.org/def/phenowl#t2"/>
-        <phen:happensIn rdf:resource="https://w3id.org/def/phenowl#s1"/>
-        <phen:hasTimeInterval rdf:resource="https://w3id.org/def/phenowl#ti1"/>
-        <phen:observationOf rdf:resource="https://w3id.org/def/phenowl#PO1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#O2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#O2">
-        <rdf:type rdf:resource="https://w3id.org/def/phenowl#Observation"/>
-        <gufo:hasBeginPoint rdf:resource="https://w3id.org/def/phenowl#t3"/>
-        <phen:happensIn rdf:resource="https://w3id.org/def/phenowl#s3"/>
-        <phen:observationOf rdf:resource="https://w3id.org/def/phenowl#PO2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#P1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#P1">
-        <rdf:type rdf:resource="https://w3id.org/def/phenowl#Phenomenon"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#PO1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#PO1">
-        <rdf:type rdf:resource="https://w3id.org/def/phenowl#PhenomenonOccurrence"/>
-        <phen:fromPhenomenon rdf:resource="https://w3id.org/def/phenowl#P1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#PO2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#PO2">
-        <rdf:type rdf:resource="https://w3id.org/def/phenowl#PhenomenonOccurrence"/>
-        <phen:fromPhenomenon rdf:resource="https://w3id.org/def/phenowl#P1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#f1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#f1">
-        <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <geosparql:rcc8ntpp rdf:resource="https://w3id.org/def/phenowl#s1"/>
-        <geosparql:rcc8tpp rdf:resource="https://w3id.org/def/phenowl#f2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#f2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#f2">
-        <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#f3 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#f3">
-        <rdf:type rdf:resource="http://www.opengis.net/ont/geosparql#Feature"/>
-        <geosparql:rcc8eq rdf:resource="https://w3id.org/def/phenowl#f1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#pr1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#pr1">
-        <rdf:type rdf:resource="https://w3id.org/def/phenowl#Presence"/>
-        <gufo:hasBeginPoint rdf:resource="https://w3id.org/def/phenowl#t3"/>
-        <phen:hasTimeInterval rdf:resource="https://w3id.org/def/phenowl#ti2"/>
-        <phen:spatialPresenceIn rdf:resource="https://w3id.org/def/phenowl#f1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#s1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#s1">
-        <rdf:type rdf:resource="https://w3id.org/seas/System"/>
-        <phen:happensIn rdf:resource="https://w3id.org/def/phenowl#s1"/>
-        <seas:connectedTo rdf:resource="https://w3id.org/def/phenowl#s3"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#s2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#s2">
-        <rdf:type rdf:resource="https://w3id.org/seas/System"/>
-        <seas:hasSubSystem rdf:resource="https://w3id.org/def/phenowl#s1"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#s3 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#s3">
-        <rdf:type rdf:resource="https://w3id.org/seas/System"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- https://w3id.org/def/phenowl#t1 -->
 
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#t1">
@@ -6833,30 +6724,11 @@ Figure below illustrates systems and their connections:
     <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#t4">
         <rdf:type rdf:resource="http://www.w3.org/2006/time#Instant"/>
     </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#ti1 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#ti1">
-        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
-        <time:hasBeginning rdf:resource="https://w3id.org/def/phenowl#t1"/>
-        <time:intervalContains rdf:resource="https://w3id.org/def/phenowl#ti2"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/def/phenowl#ti2 -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/def/phenowl#ti2">
-        <rdf:type rdf:resource="http://www.w3.org/2006/time#Interval"/>
-        <time:hasEnd rdf:resource="https://w3id.org/def/phenowl#t4"/>
-    </owl:NamedIndividual>
-    <rdf:Description>
-        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
-    </rdf:Description>
     <rdf:Description>
         <xsd:pattern>-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
+    </rdf:Description>
+    <rdf:Description>
+        <xsd:pattern>---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
     </rdf:Description>
     <rdf:Description>
         <xsd:pattern>--(0[1-9]|1[0-9]|20)(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?</xsd:pattern>
@@ -6874,8 +6746,8 @@ Figure below illustrates systems and their connections:
 
     <rdf:Description rdf:about="https://w3id.org/seas/BalanceEvaluation">
         <ns1:term_status>testing</ns1:term_status>
-        <rdfs:comment xml:lang="en">Evaluation of the difference between the incoming evaluation and the outgoing evaluation.</rdfs:comment>
         <rdfs:label>Balance Evaluation</rdfs:label>
+        <rdfs:comment xml:lang="en">Evaluation of the difference between the incoming evaluation and the outgoing evaluation.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="https://w3id.org/seas/ZoneOntology"/>
     </rdf:Description>
     
