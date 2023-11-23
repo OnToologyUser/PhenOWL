@@ -43,7 +43,7 @@ The Phenomenon Ontology relies on the following ontologies:
 
 3. **OWL-Time**: An ontology for representing temporal entities and relationships, allowing the description of temporal characteristics within the Phenomenon Ontology.
    
-4.**SEAS System ontology**: An ontology for representing Systems, Connections between systems, and Connection Points at which systems may be connected.
+4. **SEAS System ontology**: An ontology for representing Systems, Connections between systems, and Connection Points at which systems may be connected.
 
 ## Bibliography
 
