@@ -42,7 +42,7 @@ The Phenomenon Ontology relies on the following ontologies:
 2. **GeoSparql**: An ontology for representing and querying geospatial data, enabling the description of spatial features and relationships within the Phenomenon Ontology.
 
 3. **OWL-Time**: An ontology for representing temporal entities and relationships, allowing the description of temporal characteristics within the Phenomenon Ontology.
-   
+
 4. **SEAS System ontology**: An ontology for representing Systems, Connections between systems, and Connection Points at which systems may be connected.
 
 ## Bibliography
