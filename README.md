@@ -42,6 +42,8 @@ The Phenomenon Ontology relies on the following ontologies:
 2. **GeoSparql**: An ontology for representing and querying geospatial data, enabling the description of spatial features and relationships within the Phenomenon Ontology.
 
 3. **OWL-Time**: An ontology for representing temporal entities and relationships, allowing the description of temporal characteristics within the Phenomenon Ontology.
+   
+4.**SEAS System ontology**: An ontology for representing Systems, Connections between systems, and Connection Points at which systems may be connected.
 
 ## Bibliography
 
@@ -50,6 +52,7 @@ To learn more about the concepts and principles behind the Phenomenon Ontology, 
 - Pan, Feng and Jerry R. Hobbs. “Temporal Aggregates in OWL-Time.” The Florida AI Research Society (2005).
 - Guizzardi, Giancarlo \& Benevides, Alessander \& Fonseca, Claudenir \& Porello, Daniele \& Almeida, João \& Prince Sales, Tiago. (2022). UFO: Unified Foundational Ontology. Applied Ontology. 10.3233/AO-210256.
 - Car, Nicholas J., and Timo Homburg. 2022. "GeoSPARQL 1.1: Motivations, Details and Applications of the Decadal Update to the Most Important Geospatial LOD Standard" ISPRS International Journal of Geo-Information 11, no. 2: 117.
+- SEAS – SEAS Ontology. https://ci.mines-stetienne.fr/seas/. Consult on November 23, 2023.
 
 ## Contributing
 
